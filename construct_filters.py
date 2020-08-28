@@ -70,6 +70,7 @@ def construct_filter(dir_name):
 
 if __name__ == '__main__':
     files = [os.path.join(genbank_path, file_name) for file_name in os.listdir("C:\\Users\\jave3\\OneDrive\\Documents\\UROP 2020\\dna_screening_tools\\resources\\genbank") if ".fna" in file_name]
+    #files = [os.path.join(genbank_path, file_name) for file_name in os.listdir("/Users/danagretton/Dropbox (MIT)/Sculpting Evolution/Dev/dna_screening_tools/resources/genbank") if ".fna" in file_name]
     for dir_name in filter(os.path.isdir, files): # only directories
         construct_filter(dir_name)
     
